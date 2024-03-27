@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BlImplemntion\**" />
+    <EmbeddedResource Remove="BlImplemntion\**" />
+    <None Remove="BlImplemntion\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="BlImplemntion\AddressForClientRepo.cs" />
+    <Compile Include="BlImplemntion\ProfessionalsManToclientsRepo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Dal\Dal.csproj" />
+	</ItemGroup>
+</Project>

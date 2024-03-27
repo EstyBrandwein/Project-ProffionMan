@@ -1,0 +1,45 @@
+H:\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.csproj.AssemblyReference.cache
+H:\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
+H:\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.AssemblyInfoInputs.cache
+H:\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.AssemblyInfo.cs
+H:\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.csproj.CoreCompileInputs.cache
+H:\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.dll
+H:\project-esti-dassi\Dal\obj\Debug\net7.0\refint\Dal.dll
+H:\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.pdb
+H:\project-esti-dassi\Dal\bin\Debug\net7.0\Dal.deps.json
+H:\project-esti-dassi\Dal\bin\Debug\net7.0\Dal.runtimeconfig.json
+H:\project-esti-dassi\Dal\bin\Debug\net7.0\Dal.dll
+H:\project-esti-dassi\Dal\bin\Debug\net7.0\Dal.pdb
+H:\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.genruntimeconfig.cache
+H:\project-esti-dassi\Dal\obj\Debug\net7.0\ref\Dal.dll
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\bin\Debug\net7.0\Dal.deps.json
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\bin\Debug\net7.0\Dal.runtimeconfig.json
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\bin\Debug\net7.0\Dal.dll
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\bin\Debug\net7.0\Dal.pdb
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\bin\Debug\net7.0\Bl.dll
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\bin\Debug\net7.0\Bl.pdb
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.csproj.AssemblyReference.cache
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.AssemblyInfoInputs.cache
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.AssemblyInfo.cs
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.csproj.CoreCompileInputs.cache
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.csproj.CopyComplete
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.dll
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\obj\Debug\net7.0\refint\Dal.dll
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.pdb
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\obj\Debug\net7.0\Dal.genruntimeconfig.cache
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Dal\obj\Debug\net7.0\ref\Dal.dll
+H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\Dal.dll
+H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\refint\Dal.dll
+H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\Dal.pdb
+H:\project-esti-dassi\project\Dal\bin\Debug\net7.0\Dal.deps.json
+H:\project-esti-dassi\project\Dal\bin\Debug\net7.0\Dal.runtimeconfig.json
+H:\project-esti-dassi\project\Dal\bin\Debug\net7.0\Dal.dll
+H:\project-esti-dassi\project\Dal\bin\Debug\net7.0\Dal.pdb
+H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\Dal.csproj.AssemblyReference.cache
+H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
+H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\Dal.AssemblyInfoInputs.cache
+H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\Dal.AssemblyInfo.cs
+H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\Dal.csproj.CoreCompileInputs.cache
+H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\Dal.genruntimeconfig.cache
+H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\ref\Dal.dll

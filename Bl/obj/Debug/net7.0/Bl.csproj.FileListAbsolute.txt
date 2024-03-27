@@ -1,0 +1,44 @@
+H:\project-esti-dassi\Bl\bin\Debug\net7.0\Bl.deps.json
+H:\project-esti-dassi\Bl\bin\Debug\net7.0\Bl.dll
+H:\project-esti-dassi\Bl\bin\Debug\net7.0\Bl.pdb
+H:\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.csproj.AssemblyReference.cache
+H:\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+H:\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.AssemblyInfoInputs.cache
+H:\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.AssemblyInfo.cs
+H:\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.csproj.CoreCompileInputs.cache
+H:\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.dll
+H:\project-esti-dassi\Bl\obj\Debug\net7.0\refint\Bl.dll
+H:\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.pdb
+H:\project-esti-dassi\Bl\obj\Debug\net7.0\ref\Bl.dll
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Bl\bin\Debug\net7.0\Bl.deps.json
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Bl\bin\Debug\net7.0\Bl.dll
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Bl\bin\Debug\net7.0\Bl.pdb
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.csproj.AssemblyReference.cache
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.AssemblyInfoInputs.cache
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.AssemblyInfo.cs
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.csproj.CoreCompileInputs.cache
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.dll
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Bl\obj\Debug\net7.0\refint\Bl.dll
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.pdb
+C:\Users\ברנדויין אסתר\Desktop\project-esti-dassi\Bl\obj\Debug\net7.0\ref\Bl.dll
+H:\project-esti-dassi\Bl\bin\Debug\net7.0\Dal.dll
+H:\project-esti-dassi\Bl\bin\Debug\net7.0\Dal.pdb
+H:\project-esti-dassi\Bl\obj\Debug\net7.0\Bl.csproj.CopyComplete
+H:\project-esti-dassi\project\Bl\obj\Debug\net7.0\Bl.dll
+H:\project-esti-dassi\project\Bl\obj\Debug\net7.0\refint\Bl.dll
+H:\project-esti-dassi\project\Bl\obj\Debug\net7.0\Bl.pdb
+H:\project-esti-dassi\project\Bl\bin\Debug\net7.0\Bl.deps.json
+H:\project-esti-dassi\project\Bl\bin\Debug\net7.0\Bl.dll
+H:\project-esti-dassi\project\Bl\bin\Debug\net7.0\Bl.pdb
+H:\project-esti-dassi\project\Bl\bin\Debug\net7.0\Dal.dll
+H:\project-esti-dassi\project\Bl\bin\Debug\net7.0\Dal.pdb
+H:\project-esti-dassi\project\Bl\obj\Debug\net7.0\Bl.csproj.AssemblyReference.cache
+H:\project-esti-dassi\project\Bl\obj\Debug\net7.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+H:\project-esti-dassi\project\Bl\obj\Debug\net7.0\Bl.AssemblyInfoInputs.cache
+H:\project-esti-dassi\project\Bl\obj\Debug\net7.0\Bl.AssemblyInfo.cs
+H:\project-esti-dassi\project\Bl\obj\Debug\net7.0\Bl.csproj.CoreCompileInputs.cache
+H:\project-esti-dassi\project\Bl\obj\Debug\net7.0\Bl.csproj.CopyComplete
+H:\project-esti-dassi\project\Bl\obj\Debug\net7.0\ref\Bl.dll
+H:\project-esti-dassi\project\Bl\bin\Debug\net7.0\Bl.runtimeconfig.json
+H:\project-esti-dassi\project\Bl\obj\Debug\net7.0\Bl.genruntimeconfig.cache
