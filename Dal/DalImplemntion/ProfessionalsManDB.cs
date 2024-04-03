@@ -1,5 +1,6 @@
 ﻿using Dal.DalApi;
 using Dal.DalObject;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,7 @@ namespace Dal.DalImplemntion
 
         public ProfessionalsMan Delete(int id)
         {
-            ProfessionalsMan remove =  context.ProfessionalsMen.FirstOrDefault(x=>x.Id == id);
+            ProfessionalsMan remove =  context.ProfessionalsMen.Include(x => x.IdAdressNavigation).Include(x => x.IdTypeNavigation).FirstOrDefault(x=>x.Id == id);
             context.ProfessionalsMen.Remove(remove);
             context.SaveChanges();
             return remove;
@@ -33,16 +34,16 @@ namespace Dal.DalImplemntion
 
         public List<ProfessionalsMan> GetAll()
         {
-            return context.ProfessionalsMen.ToList();
+            return context.ProfessionalsMen.Include(x=>x.IdAdressNavigation).Include(x=>x.IdTypeNavigation).ToList();
         }
 
         public ProfessionalsMan GetById(int id)
         {
-            return context.ProfessionalsMen.FirstOrDefault(x=>x.Id == id);
+            return context.ProfessionalsMen.Include(x => x.IdAdressNavigation).Include(x => x.IdTypeNavigation).FirstOrDefault(x=>x.Id == id);
         }
         public ProfessionalsMan Update(int id, ProfessionalsMan professionalsMan)
         {
-            ProfessionalsMan n = context.ProfessionalsMen.FirstOrDefault(x => x.Id == id);
+            ProfessionalsMan n = context.ProfessionalsMen.Include(x => x.IdAdressNavigation).Include(x => x.IdTypeNavigation.Type).FirstOrDefault(x => x.Id == id);
             n = professionalsMan;
             context.SaveChanges();
             return professionalsMan;
