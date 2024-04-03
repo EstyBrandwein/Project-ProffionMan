@@ -8,9 +8,9 @@ namespace Bl.BlImplemntion
 {
     public class ProfessionalsManToclientsRepo:IProfessionalsManToclientsRepo
     {
-        ProfessionalsManRepo professionalsManRepo;
-        AddressRepo addressRepo;
-        ProfessionRepo professionRepo;
+        ProfessionalsManDB professionalsManRepo;
+        AddressDB addressRepo;
+        ProfessionDB professionRepo;
         public ProfessionalsManToclientsRepo(DalManager dalManager)
         {
             this.professionalsManRepo = dalManager.professionalsMan;
@@ -43,14 +43,22 @@ namespace Bl.BlImplemntion
             List<ProfessionalsManToclients> ans = new List<ProfessionalsManToclients>();
             for (int i = 0; i < addressToClients.Count; i++)
             {
-                ans.Add(new ProfessionalsManToclients() { Id = addressToClients[i].Id,FirstName = addressToClients[i].FirstName,
-                    LastName = addressToClients[i].LastName,Phon = addressToClients[i].Phon,
-                    WhatsApp = addressToClients[i].WhatsApp,Email = addressToClients[i].Email,
-                    HourlyPrice = addressToClients[i].HourlyPrice,
-                    Address = new AddressToClient() { Id = addressToClients[i].IdAdressNavigation.Id, 
-                        City = addressToClients[i].IdAdressNavigation.City,Nighbord = addressToClients[i].IdAdressNavigation.Neighborhood},
-                    profession = new ProfessionToClient() { Id = addressToClients[i].IdTypeNavigation.Id,Type = addressToClients[i].IdTypeNavigation.Type }
-                });
+                ProfessionalsManToclients a = new ProfessionalsManToclients();
+                a.Id = addressToClients[i].Id;
+                a.FirstName = addressToClients[i].FirstName;
+                a.LastName = addressToClients[i].LastName;
+                a.Phon = addressToClients[i].Phon;
+                a.WhatsApp = addressToClients[i].WhatsApp;
+                a.Email = addressToClients[i].Email;
+                a.HourlyPrice = addressToClients[i].HourlyPrice;
+                a.Address = new AddressToClient()
+                {
+                    Id = addressToClients[i].IdAdressNavigation.Id,
+                    City = addressToClients[i].IdAdressNavigation.City,
+                    Nighbord = addressToClients[i].IdAdressNavigation.Neighborhood
+                };
+                a.profession = new ProfessionToClient() { Id = addressToClients[i].IdTypeNavigation.Id, Type = addressToClients[i].IdTypeNavigation.Type };
+                ans.Add(a);
             }
             return ans;
         }
@@ -78,31 +86,22 @@ namespace Bl.BlImplemntion
 
         }
 
+
         public ProfessionalsManToclients Update(int id, ProfessionalsManToclients t)
         {
-            throw new NotImplementedException();
+            ProfessionalsMan professionalmanToUpdate = new ProfessionalsMan()
+            {
+                Id = t.Id,
+                FirstName = t.FirstName,
+                LastName = t.LastName,
+                Email = t.Email,
+                WhatsApp = t.WhatsApp,
+                IdAdress = t.Address.Id,
+                IdType = t.profession.Id
+            };
+            professionalsManRepo.Update(professionalmanToUpdate.Id, professionalmanToUpdate);
+            return t;
         }
 
-        //public ProfessionalsManToclients Update(int id, ProfessionalsManToclients t)
-        //{
-        //    ProfessionalsMan professionalmanToUpdate = new ProfessionalsMan(){
-        //        Id = t.Id,
-        //        FirstName = t.FirstName,
-        //        LastName = t.LastName,
-        //        Email = t.Email,
-        //        WhatsApp = t.WhatsApp,
-        //        IdAdress = t.Address.Id,
-        //        IdType = t.profession.Id
-        //    };
-        //};
-        //    ProfessionalsMan professionalsMan = professionalsManRepo.Update(id);
-        //    //address.City = t.City;
-        //    //address.Neighborhood = t.Nighbord;
-        //    //address.Street = street;
-        //    //address.Apartment = apartment;
-        //    //professionalsManRepo.Update(id, address);
-        //    return t;
-        //    throw new NotImplementedException();
-        //}
     }
 }

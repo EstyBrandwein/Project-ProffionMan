@@ -43,3 +43,17 @@ H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\Dal.AssemblyInfo.cs
 H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\Dal.csproj.CoreCompileInputs.cache
 H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\Dal.genruntimeconfig.cache
 H:\project-esti-dassi\project\Dal\obj\Debug\net7.0\ref\Dal.dll
+H:\project-esti-dassi\Project-ProffionMan\Dal\bin\Debug\net7.0\Dal.deps.json
+H:\project-esti-dassi\Project-ProffionMan\Dal\bin\Debug\net7.0\Dal.runtimeconfig.json
+H:\project-esti-dassi\Project-ProffionMan\Dal\bin\Debug\net7.0\Dal.dll
+H:\project-esti-dassi\Project-ProffionMan\Dal\bin\Debug\net7.0\Dal.pdb
+H:\project-esti-dassi\Project-ProffionMan\Dal\obj\Debug\net7.0\Dal.csproj.AssemblyReference.cache
+H:\project-esti-dassi\Project-ProffionMan\Dal\obj\Debug\net7.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
+H:\project-esti-dassi\Project-ProffionMan\Dal\obj\Debug\net7.0\Dal.AssemblyInfoInputs.cache
+H:\project-esti-dassi\Project-ProffionMan\Dal\obj\Debug\net7.0\Dal.AssemblyInfo.cs
+H:\project-esti-dassi\Project-ProffionMan\Dal\obj\Debug\net7.0\Dal.csproj.CoreCompileInputs.cache
+H:\project-esti-dassi\Project-ProffionMan\Dal\obj\Debug\net7.0\Dal.dll
+H:\project-esti-dassi\Project-ProffionMan\Dal\obj\Debug\net7.0\refint\Dal.dll
+H:\project-esti-dassi\Project-ProffionMan\Dal\obj\Debug\net7.0\Dal.pdb
+H:\project-esti-dassi\Project-ProffionMan\Dal\obj\Debug\net7.0\Dal.genruntimeconfig.cache
+H:\project-esti-dassi\Project-ProffionMan\Dal\obj\Debug\net7.0\ref\Dal.dll

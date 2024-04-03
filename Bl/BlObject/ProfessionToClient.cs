@@ -9,10 +9,6 @@ namespace Bl.BlObject
 {
     public class ProfessionToClient
     {
-        public ProfessionToClient()
-        {
-
-        }
         public int Id { get; set; }
 
         public string Type { get; set; }

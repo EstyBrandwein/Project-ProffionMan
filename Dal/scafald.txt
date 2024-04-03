@@ -1,1 +1,1 @@
-﻿Scaffold-DbContext 'Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\project-esti-dassi\PROJECT\DB\DB.mdf;Integrated Security=True;Connect Timeout=30' Microsoft.EntityFrameworkCore.SqlServer –Context Context -OutputDir DalObject  -Force -NoOnConfiguring
+﻿Scaffold-DbContext 'H:\PROJECT-ESTI-DASSI\PROJECT-PROFFIONMAN\DB\DB.MDF' Microsoft.EntityFrameworkCore.SqlServer –Context Context -OutputDir DalObject  -Force -NoOnConfiguring

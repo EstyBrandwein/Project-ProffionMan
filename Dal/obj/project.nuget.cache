@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WEMHwtKbH2CkMyHDv9dYlrrRC3wc6ce57Aa5E+R607n96QR4PhJLzGttJcrQ5oqbNazSKfuGYzgFs+gZ3r74VQ==",
+  "dgSpecHash": "IudAcorSOdelx7mqGCNGKqnCfcc2cX+ag3qsKp0yr3+GYhJEgS0QQ3ISruLsBV+CoU98UWDAGhZxwyTqTMqJsw==",
   "success": true,
-  "projectFilePath": "H:\\project-esti-dassi\\project\\Dal\\Dal.csproj",
+  "projectFilePath": "H:\\project-esti-dassi\\Project-ProffionMan\\Dal\\Dal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ברנדויין אסתר\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\ברנדויין אסתר\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

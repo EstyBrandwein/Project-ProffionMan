@@ -12,10 +12,10 @@ namespace Dal
 {
     public class DalManager
     {
-        public ProfessionalsManRepo professionalsMan { get; }
-        public ProfessionRepo profession { get; }
-        public AddressRepo address { get; }
-        public ReferenceRepo reference { get; }
+        public ProfessionalsManDB professionalsMan { get; }
+        public ProfessionDB profession { get; }
+        public AddressDB address { get; }
+        public ReferenceDB reference { get; }
 
         public DalManager()
         {
@@ -24,19 +24,17 @@ namespace Dal
             // מוסיפים לאוסף אוביקטים
             services.AddDbContext<Context>();
 
-
-            services.AddScoped<IRepo<ProfessionalsMan>, ProfessionalsManRepo>();
-            services.AddScoped<IRepo<Profession>, ProfessionRepo>();
-            services.AddScoped<IRepo<Address>, AddressRepo>();
-            services.AddScoped<IRepo<Reference>, ReferenceRepo>();
-            //....
+            services.AddScoped<IRepo<ProfessionalsMan>, ProfessionalsManDB>();
+            services.AddScoped<IRepo<Profession>, ProfessionDB>();
+            services.AddScoped<IRepo<Address>, AddressDB>();
+            services.AddScoped<IRepo<Reference>, ReferenceDB>();
             // הגדרת מנהל למחלקות השרות שנקרא פרווידר
             ServiceProvider serviceProvider = services.BuildServiceProvider();
 
-            professionalsMan = (ProfessionalsManRepo ) serviceProvider.GetRequiredService<IRepo<ProfessionalsMan>>();
-            profession = (ProfessionRepo) serviceProvider.GetRequiredService<IRepo<Profession>>();
-            address = (AddressRepo)serviceProvider.GetRequiredService<IRepo<Address>>();
-            reference = (ReferenceRepo)serviceProvider.GetRequiredService<IRepo<Reference>>();
+            professionalsMan = (ProfessionalsManDB ) serviceProvider.GetRequiredService<IRepo<ProfessionalsMan>>();
+            profession = (ProfessionDB) serviceProvider.GetRequiredService<IRepo<Profession>>();
+            address = (AddressDB)serviceProvider.GetRequiredService<IRepo<Address>>();
+            reference = (ReferenceDB)serviceProvider.GetRequiredService<IRepo<Reference>>();
         }
     }
 }

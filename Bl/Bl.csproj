@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="BlApi\IRepo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Include="BlImplemntion\AddressForClientRepo.cs" />
     <Compile Include="BlImplemntion\ProfessionalsManToclientsRepo.cs" />
   </ItemGroup>

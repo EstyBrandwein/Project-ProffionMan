@@ -2871,11 +2871,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\project-esti-dassi\\project\\Bl\\Bl.csproj",
+      "projectUniqueName": "H:\\project-esti-dassi\\Project-ProffionMan\\Bl\\Bl.csproj",
       "projectName": "Bl",
-      "projectPath": "H:\\project-esti-dassi\\project\\Bl\\Bl.csproj",
+      "projectPath": "H:\\project-esti-dassi\\Project-ProffionMan\\Bl\\Bl.csproj",
       "packagesPath": "C:\\Users\\ברנדויין אסתר\\.nuget\\packages\\",
-      "outputPath": "H:\\project-esti-dassi\\project\\Bl\\obj\\",
+      "outputPath": "H:\\project-esti-dassi\\Project-ProffionMan\\Bl\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2896,8 +2896,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "H:\\project-esti-dassi\\project\\Dal\\Dal.csproj": {
-              "projectPath": "H:\\project-esti-dassi\\project\\Dal\\Dal.csproj"
+            "H:\\project-esti-dassi\\Project-ProffionMan\\Dal\\Dal.csproj": {
+              "projectPath": "H:\\project-esti-dassi\\Project-ProffionMan\\Dal\\Dal.csproj"
             }
           }
         }

@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Bl;
+using Bl.BlApi;
+using Bl.BlImplemntion;
+using Bl.BlObject;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace project.controllers
@@ -7,15 +11,15 @@ namespace project.controllers
     [ApiController]
     public class professionalsManController : ControllerBase
     {
-        IRepo<ProfessionalsMan> professionalsManRepo;
-        public professionalsManController( IRepo<ProfessionalsMan> professionalsManRepo)
+        IProfessionalsManToclientsRepo professionalsManRepo;
+        public professionalsManController(BlManger blManger)
         {
-            this.professionalsManRepo = professionalsManRepo;
+            this.professionalsManRepo = blManger.professionalsManToclientsRepo;
         }
         [HttpGet]
-        public ActionResult<List<ProfessionalsMan>> GetAllProfessionalsMan()
+        public ActionResult<List<ProfessionalsManToclients>> GetAllProfessionalsMan()
         {
-            List<ProfessionalsMan> get = professionalsManRepo.GetAll();
+            List<ProfessionalsManToclients> get = professionalsManRepo.GetAll();
             if (get != null)
             {
                 return get;
@@ -24,9 +28,9 @@ namespace project.controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<ProfessionalsMan> GetByIdProfessionalsMan(int id)
+        public ActionResult<ProfessionalsManToclients> GetByIdProfessionalsMan(int id)
         {
-            ProfessionalsMan getbyid = professionalsManRepo.GetById(id);
+            ProfessionalsManToclients getbyid = professionalsManRepo.GetById(id);
             if (getbyid != null)
             {
                 return getbyid;
@@ -34,9 +38,9 @@ namespace project.controllers
             return NotFound();
         }
         [HttpPost]
-        public ActionResult<ProfessionalsMan> AddProfessionalsMan(ProfessionalsMan professionalsMan)
+        public ActionResult<ProfessionalsManToclients> AddProfessionalsMan(ProfessionalsManToclients professionalsMan)
         {
-            ProfessionalsMan add = professionalsManRepo.Add(professionalsMan);
+            ProfessionalsManToclients add = professionalsManRepo.Add(professionalsMan);
             if (add != null)
             {
                 return add;
@@ -44,9 +48,9 @@ namespace project.controllers
             return NotFound();
         }
         [HttpPut("{id}")]
-        public ActionResult<ProfessionalsMan> UpDateProfessionalsMan(int id, ProfessionalsMan professionalsMan)
+        public ActionResult<ProfessionalsManToclients> UpDateProfessionalsMan(int id, ProfessionalsManToclients professionalsMan)
         {
-            ProfessionalsMan Update =  professionalsManRepo.Update(id, professionalsMan);
+            ProfessionalsManToclients Update =  professionalsManRepo.Update(id, professionalsMan);
             if (Update != null)
             {
                 return Update;
@@ -54,9 +58,9 @@ namespace project.controllers
             return NotFound();
         }
         [HttpDelete("{id}")]
-        public ActionResult<ProfessionalsMan> DeleteProfessionalsMan(int id)
+        public ActionResult<ProfessionalsManToclients> DeleteProfessionalsMan(int id)
         {
-            ProfessionalsMan delete = professionalsManRepo.Delete(id);
+            ProfessionalsManToclients delete = professionalsManRepo.Delete(id);
             if (delete != null)
             {
                 return delete;

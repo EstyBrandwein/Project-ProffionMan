@@ -8,17 +8,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Bl.BlImplemntion
 {
     public class AddressForClientRepo : IRepoAddress
     {
-        AddressRepo addressRepo;
+        AddressDB addressRepo;
         public AddressForClientRepo(DalManager dalManager)
         {
             this.addressRepo = dalManager.address;
         }
-
         public AddressToClient Add(AddressToClient t, string street, string apartment)
         {
             
@@ -45,7 +43,6 @@ namespace Bl.BlImplemntion
         {
             Address address = addressRepo.GetById(id);
             return new AddressToClient() { City = address.City, Nighbord = address.Street };
-            
         }
 
         public AddressToClient Update(int id, AddressToClient t,string street,string apartment)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\project-esti-dassi\\project\\Dal\\Dal.csproj": {}
+    "H:\\project-esti-dassi\\Project-ProffionMan\\Dal\\Dal.csproj": {}
   },
   "projects": {
-    "H:\\project-esti-dassi\\project\\Dal\\Dal.csproj": {
+    "H:\\project-esti-dassi\\Project-ProffionMan\\Dal\\Dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\project-esti-dassi\\project\\Dal\\Dal.csproj",
+        "projectUniqueName": "H:\\project-esti-dassi\\Project-ProffionMan\\Dal\\Dal.csproj",
         "projectName": "Dal",
-        "projectPath": "H:\\project-esti-dassi\\project\\Dal\\Dal.csproj",
+        "projectPath": "H:\\project-esti-dassi\\Project-ProffionMan\\Dal\\Dal.csproj",
         "packagesPath": "C:\\Users\\ברנדויין אסתר\\.nuget\\packages\\",
-        "outputPath": "H:\\project-esti-dassi\\project\\Dal\\obj\\",
+        "outputPath": "H:\\project-esti-dassi\\Project-ProffionMan\\Dal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

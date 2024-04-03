@@ -2889,11 +2889,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\project-esti-dassi\\project\\project\\project.csproj",
+      "projectUniqueName": "H:\\project-esti-dassi\\Project-ProffionMan\\project\\project.csproj",
       "projectName": "project",
-      "projectPath": "H:\\project-esti-dassi\\project\\project\\project.csproj",
+      "projectPath": "H:\\project-esti-dassi\\Project-ProffionMan\\project\\project.csproj",
       "packagesPath": "C:\\Users\\ברנדויין אסתר\\.nuget\\packages\\",
-      "outputPath": "H:\\project-esti-dassi\\project\\project\\obj\\",
+      "outputPath": "H:\\project-esti-dassi\\Project-ProffionMan\\project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2915,8 +2915,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "H:\\project-esti-dassi\\project\\Bl\\Bl.csproj": {
-              "projectPath": "H:\\project-esti-dassi\\project\\Bl\\Bl.csproj"
+            "H:\\project-esti-dassi\\Project-ProffionMan\\Bl\\Bl.csproj": {
+              "projectPath": "H:\\project-esti-dassi\\Project-ProffionMan\\Bl\\Bl.csproj"
             }
           }
         }

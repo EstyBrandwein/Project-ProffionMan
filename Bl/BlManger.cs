@@ -14,6 +14,7 @@ namespace Bl
     public class BlManger
     {
         public AddressForClientRepo addressForClientRepo { get; }
+        public ProfessionalsManToclientsRepo professionalsManToclientsRepo { get; }
         //.....
 
         public BlManger()
@@ -22,10 +23,12 @@ namespace Bl
             services.AddScoped<DalManager>();
 
             services.AddScoped<AddressForClientRepo>();
+            services.AddScoped<ProfessionalsManToclientsRepo>();
             //.....
             ServiceProvider servicesProvider = services.BuildServiceProvider();
             
-            addressForClientRepo= servicesProvider.GetService<AddressForClientRepo>();  
+            addressForClientRepo= servicesProvider.GetService<AddressForClientRepo>();
+            professionalsManToclientsRepo = servicesProvider.GetService<ProfessionalsManToclientsRepo>();  
             //..........
 
         }

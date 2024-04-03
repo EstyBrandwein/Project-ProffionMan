@@ -14,10 +14,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="DalImplemntion\AddressRepo.cs" />
-    <Compile Include="DalImplemntion\ProfessionalsManRepo.cs" />
-    <Compile Include="DalImplemntion\ProfessionRepo.cs" />
-    <Compile Include="DalImplemntion\ReferenceRepo.cs" />
+    <Compile Include="DalImplemntion\AddressDB.cs" />
+    <Compile Include="DalImplemntion\ProfessionalsManDB.cs" />
+    <Compile Include="DalImplemntion\ProfessionDB.cs" />
+    <Compile Include="DalImplemntion\ReferenceDB.cs" />
   </ItemGroup>
 
   <ItemGroup>
