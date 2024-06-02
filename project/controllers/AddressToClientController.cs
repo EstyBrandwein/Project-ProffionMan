@@ -38,7 +38,7 @@ namespace project.controllers
             return NotFound();
         }
         [HttpPost]
-        public ActionResult<AddressToClient> AddAdresses([FromForm] AddressToClient professionalsMan, [FromQuery] string street, [FromQuery] string apartment)
+        public ActionResult<AddressToClient> AddAdresses([FromForm] AddressToClient professionalsMan, [FromQuery] string street, [FromQuery] int apartment)
         {
             AddressToClient add = AddressToClientRepo.Add(professionalsMan, street, apartment);
             if (add != null)
@@ -48,7 +48,7 @@ namespace project.controllers
             return NotFound();
         }
         [HttpPut]
-        public ActionResult<AddressToClient> UpDateAdresses([FromForm] int id, [FromForm] AddressToClient address, [FromForm] string street, [FromForm] string apartment)
+        public ActionResult<AddressToClient> UpDateAdresses([FromForm] int id, [FromForm] AddressToClient address, [FromForm] string street, [FromForm] int apartment)
         {
             AddressToClient Update = AddressToClientRepo.Update(id, address, street, apartment);
             if (Update != null)

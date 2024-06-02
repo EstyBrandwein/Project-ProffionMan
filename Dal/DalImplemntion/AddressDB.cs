@@ -41,7 +41,7 @@ namespace Dal.DalImplemntion
         {
             Address n = context.Addresses.FirstOrDefault(x => x.Id == id);
             n.Street = t.Street;
-            n.Apartment = t.Apartment;
+            n.Building = t.Building;
             context.Update(n);
             context.SaveChanges();
             return t;

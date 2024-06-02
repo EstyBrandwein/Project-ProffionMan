@@ -1,12 +1,14 @@
 ﻿using Dal.DalApi;
 using Dal.DalImplemntion;
 using Dal.DalObject;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace Dal
 {
@@ -17,12 +19,13 @@ namespace Dal
         public AddressDB address { get; }
         public ReferenceDB reference { get; }
 
-        public DalManager()
+        public DalManager(string connection)
         {
             // באן הגדרנו אוסף של מחלקות שרות
             ServiceCollection services = new();
             // מוסיפים לאוסף אוביקטים
-            services.AddDbContext<Context>();
+            //services.AddDbContext<Context>();
+            services.AddDbContext<Context>(options => options.UseSqlServer(connection));
 
             services.AddScoped<IRepo<ProfessionalsMan>, ProfessionalsManDB>();
             services.AddScoped<IRepo<Profession>, ProfessionDB>();

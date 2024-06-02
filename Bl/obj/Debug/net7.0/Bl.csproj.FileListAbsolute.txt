@@ -56,6 +56,6 @@ H:\project-esti-dassi\Project-ProffionMan\Bl\bin\Debug\net7.0\Bl.dll
 H:\project-esti-dassi\Project-ProffionMan\Bl\bin\Debug\net7.0\Bl.pdb
 H:\project-esti-dassi\Project-ProffionMan\Bl\bin\Debug\net7.0\Dal.dll
 H:\project-esti-dassi\Project-ProffionMan\Bl\bin\Debug\net7.0\Dal.pdb
-H:\project-esti-dassi\Project-ProffionMan\Bl\obj\Debug\net7.0\Bl.csproj.CopyComplete
 H:\project-esti-dassi\Project-ProffionMan\Bl\obj\Debug\net7.0\Bl.genruntimeconfig.cache
 H:\project-esti-dassi\Project-ProffionMan\Bl\obj\Debug\net7.0\ref\Bl.dll
+H:\project-esti-dassi\Project-ProffionMan\Bl\obj\Debug\net7.0\Bl.csproj.CopyComplete

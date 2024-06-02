@@ -9,8 +9,8 @@ namespace Bl.BlApi
 {
     public interface IRepoAddress
     {
-        public AddressToClient Add(AddressToClient t, string street, string apartment);
-        public AddressToClient Update(int id, AddressToClient t, string street, string apartment);
+        public AddressToClient Add(AddressToClient t, string street, int apartment);
+        public AddressToClient Update(int id, AddressToClient t, string street, int apartment);
         List<AddressToClient> GetAll();
         AddressToClient GetById(int id);
         AddressToClient Delete(int id);

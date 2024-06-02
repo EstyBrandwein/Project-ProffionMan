@@ -20,6 +20,8 @@ namespace Dal.DalImplemntion
         public ProfessionalsMan Add(ProfessionalsMan t)
         {
             context.ProfessionalsMen.Add(t);
+            context.Addresses.Add(t.IdAdressNavigation);
+            context.Professions.Add(t.IdTypeNavigation);
             context.SaveChanges();
             return t;
         }
@@ -34,7 +36,7 @@ namespace Dal.DalImplemntion
 
         public List<ProfessionalsMan> GetAll()
         {
-            return context.ProfessionalsMen.Include(x=>x.IdAdressNavigation).Include(x=>x.IdTypeNavigation).ToList();
+            return context.ProfessionalsMen.Include(x=>x.IdAdressNavigation).Include(x=>x.IdTypeNavigation).Include(x=>x.References).ToList();
         }
 
         public ProfessionalsMan GetById(int id)

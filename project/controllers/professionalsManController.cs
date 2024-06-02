@@ -38,9 +38,9 @@ namespace project.controllers
             return NotFound();
         }
         [HttpPost]
-        public ActionResult<ProfessionalsManToclients> AddProfessionalsMan(ProfessionalsManToclients professionalsMan)
+        public ActionResult<ProfessionalsManToclients> AddProfessionalsMan(ProfessionalsManToclients t, AddressToClient address, int appartment, string street, string typeProfession)
         {
-            ProfessionalsManToclients add = professionalsManRepo.Add(professionalsMan);
+            ProfessionalsManToclients add = professionalsManRepo.Add( t,  address,  appartment,  street,  typeProfession);
             if (add != null)
             {
                 return add;
@@ -48,9 +48,9 @@ namespace project.controllers
             return NotFound();
         }
         [HttpPut("{id}")]
-        public ActionResult<ProfessionalsManToclients> UpDateProfessionalsMan(int id, ProfessionalsManToclients professionalsMan)
+        public ActionResult<ProfessionalsManToclients> UpDateProfessionalsMan(ProfessionalsManToclients t, string street, int building)
         {
-            ProfessionalsManToclients Update =  professionalsManRepo.Update(id, professionalsMan);
+            ProfessionalsManToclients Update =  professionalsManRepo.Update( t,  street,  building);
             if (Update != null)
             {
                 return Update;

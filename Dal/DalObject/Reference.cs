@@ -11,11 +11,13 @@ public partial class Reference
 
     public string Phon { get; set; }
 
-    public string Eamail { get; set; }
+    public string Email { get; set; }
 
     public string Describe { get; set; }
 
     public int IdProfessionals { get; set; }
+
+    public string Name { get; set; }
 
     public virtual ProfessionalsMan IdProfessionalsNavigation { get; set; }
 }

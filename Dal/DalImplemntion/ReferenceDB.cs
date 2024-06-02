@@ -23,12 +23,18 @@ namespace Dal.DalImplemntion
             return t;
         }
 
-        public Reference Delete(int id)
+        public ProfessionalsMan Delete(int id)
         {
-            Reference remove =  context.References.FirstOrDefault(x=>x.Id == id);
-            context.References.Remove(remove);
+            foreach (var item in context.References)
+            {
+                if(item.IdProfessionals == id)
+                {
+                    context.References.Remove(item);
+                }
+            }
+
             context.SaveChanges();
-            return remove;
+            return context.ProfessionalsMen.FirstOrDefault(x => x.Id == id);
         }
 
         public List<Reference> GetAll()
@@ -46,6 +52,11 @@ namespace Dal.DalImplemntion
             n = professionalsMan;
             context.SaveChanges();
             return professionalsMan;
+        }
+
+        Reference IRepo<Reference>.Delete(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

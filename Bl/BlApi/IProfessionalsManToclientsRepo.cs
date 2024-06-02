@@ -9,8 +9,8 @@ namespace Bl.BlApi
 {
     public interface IProfessionalsManToclientsRepo
     {
-        public ProfessionalsManToclients Add(ProfessionalsManToclients t);
-        public ProfessionalsManToclients Update(int id, ProfessionalsManToclients t);
+        public ProfessionalsManToclients Add(ProfessionalsManToclients t, AddressToClient address, int appartment, string street, string typeProfession);
+        public ProfessionalsManToclients Update(ProfessionalsManToclients t, string street, int building);
         List<ProfessionalsManToclients> GetAll();
         ProfessionalsManToclients GetById(int id);
         ProfessionalsManToclients Delete(int id);

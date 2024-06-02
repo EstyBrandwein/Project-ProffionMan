@@ -1,4 +1,4 @@
-﻿using Dal.DalObject;
+﻿//using Dal.DalObject;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace Bl.BlObject
 {
     public class ProfessionalsManToclients
     {
-        public int Id { get; set; }
+        //public int Id { get; set; }
 
         public string FirstName { get; set; }
 
@@ -18,7 +18,7 @@ namespace Bl.BlObject
 
         public ProfessionToClient profession { get; set; }
 
-        public int? HourlyPrice { get; set; }
+        //public int? HourlyPrice { get; set; }
 
         public AddressToClient Address { get; set; }
         public string WhatsApp { get; set; }
@@ -26,5 +26,6 @@ namespace Bl.BlObject
         public string Email { get; set; }
 
         public string Phon { get; set; }
+        public  ICollection<ReferenceBL> References { get; set; } 
     }
 }

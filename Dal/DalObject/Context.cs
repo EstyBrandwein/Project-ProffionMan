@@ -6,19 +6,19 @@ namespace Dal.DalObject;
 
 public partial class Context : DbContext
 {
-    public Context()
+    public Context(DbContextOptions<Context> options)
+        : base(options)
     {
     }
-    public Context(DbContextOptions<Context> options): base(options)
-    {
-    }
+
     public virtual DbSet<Address> Addresses { get; set; }
+
     public virtual DbSet<Profession> Professions { get; set; }
+
     public virtual DbSet<ProfessionalsMan> ProfessionalsMen { get; set; }
+
     public virtual DbSet<Reference> References { get; set; }
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=H:\\project-esti-dassi\\Project-ProffionMan\\DB\\DB.mdf;Integrated Security=True;Connect Timeout=30");
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Address>(entity =>
@@ -27,10 +27,7 @@ public partial class Context : DbContext
 
             entity.ToTable("Address");
 
-            entity.Property(e => e.Apartment)
-                .HasMaxLength(10)
-                .IsFixedLength()
-                .HasColumnName("apartment");
+            entity.Property(e => e.Building).HasColumnName("building");
             entity.Property(e => e.City)
                 .IsRequired()
                 .HasMaxLength(10)
@@ -69,14 +66,13 @@ public partial class Context : DbContext
                 .HasMaxLength(35)
                 .HasColumnName("email");
             entity.Property(e => e.FirstName)
+                .IsRequired()
                 .HasMaxLength(10)
                 .IsFixedLength()
                 .HasColumnName("first_name");
-            entity.Property(e => e.HourlyPrice).HasColumnName("Hourly price");
             entity.Property(e => e.IdAdress).HasColumnName("id_adress");
             entity.Property(e => e.IdType).HasColumnName("id_type");
             entity.Property(e => e.LastName)
-                .IsRequired()
                 .HasMaxLength(10)
                 .IsFixedLength()
                 .HasColumnName("last_name");
@@ -103,22 +99,26 @@ public partial class Context : DbContext
 
         modelBuilder.Entity<Reference>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__referenc__3214EC07B391B471");
+            entity.HasKey(e => e.Id).HasName("PK__referenc__3214EC07EF025432");
 
-            entity.ToTable("reference");
+            entity.ToTable("references");
 
             entity.Property(e => e.Describe)
                 .IsRequired()
                 .HasMaxLength(50)
                 .HasColumnName("describe");
-            entity.Property(e => e.Eamail)
+            entity.Property(e => e.Email)
                 .IsRequired()
                 .HasMaxLength(25)
                 .IsFixedLength()
-                .HasColumnName("eamail");
+                .HasColumnName("email");
             entity.Property(e => e.IdProfessionals).HasColumnName("id_Professionals");
-            entity.Property(e => e.Phon)
+            entity.Property(e => e.Name)
                 .IsRequired()
+                .HasMaxLength(50)
+                .IsFixedLength()
+                .HasColumnName("name");
+            entity.Property(e => e.Phon)
                 .HasMaxLength(10)
                 .IsFixedLength()
                 .HasColumnName("phon");

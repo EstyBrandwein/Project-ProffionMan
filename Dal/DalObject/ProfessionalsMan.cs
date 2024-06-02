@@ -13,8 +13,6 @@ public partial class ProfessionalsMan
 
     public int IdType { get; set; }
 
-    public int? HourlyPrice { get; set; }
-
     public int IdAdress { get; set; }
 
     public string Email { get; set; }

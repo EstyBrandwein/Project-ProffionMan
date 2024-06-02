@@ -291,6 +291,6 @@ H:\project-esti-dassi\Project-ProffionMan\project\obj\Debug\net7.0\staticwebasse
 H:\project-esti-dassi\Project-ProffionMan\project\obj\Debug\net7.0\staticwebassets.build.json
 H:\project-esti-dassi\Project-ProffionMan\project\obj\Debug\net7.0\staticwebassets.development.json
 H:\project-esti-dassi\Project-ProffionMan\project\obj\Debug\net7.0\scopedcss\bundle\project.styles.css
-H:\project-esti-dassi\Project-ProffionMan\project\obj\Debug\net7.0\project.csproj.CopyComplete
 H:\project-esti-dassi\Project-ProffionMan\project\obj\Debug\net7.0\project.genruntimeconfig.cache
 H:\project-esti-dassi\Project-ProffionMan\project\obj\Debug\net7.0\ref\project.dll
+H:\project-esti-dassi\Project-ProffionMan\project\obj\Debug\net7.0\project.csproj.CopyComplete

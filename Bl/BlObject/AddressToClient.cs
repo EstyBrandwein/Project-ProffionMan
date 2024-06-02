@@ -8,7 +8,7 @@ namespace Bl.BlObject
 {
     public class AddressToClient
     {
-        public int Id { get; set; }
+        //public int Id { get; set; }
         public string City { get; set; }
         public string Nighbord { get; set; }
     }

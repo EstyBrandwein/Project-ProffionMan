@@ -8,19 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="DalImplemntion\**" />
-    <EmbeddedResource Remove="DalImplemntion\**" />
-    <None Remove="DalImplemntion\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="DalImplemntion\AddressDB.cs" />
-    <Compile Include="DalImplemntion\ProfessionalsManDB.cs" />
-    <Compile Include="DalImplemntion\ProfessionDB.cs" />
-    <Compile Include="DalImplemntion\ReferenceDB.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.14">
       <PrivateAssets>all</PrivateAssets>

@@ -11,7 +11,7 @@ public partial class Address
 
     public string Street { get; set; }
 
-    public string Apartment { get; set; }
+    public int? Building { get; set; }
 
     public string Neighborhood { get; set; }
 

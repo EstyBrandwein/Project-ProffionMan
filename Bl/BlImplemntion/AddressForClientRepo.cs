@@ -17,10 +17,10 @@ namespace Bl.BlImplemntion
         {
             this.addressRepo = dalManager.address;
         }
-        public AddressToClient Add(AddressToClient t, string street, string apartment)
+        public AddressToClient Add(AddressToClient t, string street, int building)
         {
             
-            addressRepo.Add(new Address() { City = t.City,Street = street, Apartment = apartment,Neighborhood = t.Nighbord,Id = t.Id});
+            addressRepo.Add(new Address() { City = t.City,Street = street, Building = building, Neighborhood = t.Nighbord});
             return t;
         }
         public AddressToClient Delete(int id)
@@ -34,7 +34,7 @@ namespace Bl.BlImplemntion
             List<AddressToClient> ans = new List<AddressToClient>();
             for (int i = 0; i < addressToClients.Count; i++)
             {
-                ans.Add(new AddressToClient() {Id = addressToClients[i].Id, City = addressToClients[i].City, Nighbord = addressToClients[i].Street });
+                ans.Add(new AddressToClient() { City = addressToClients[i].City, Nighbord = addressToClients[i].Street });
             }
             return ans;
         }
@@ -45,13 +45,13 @@ namespace Bl.BlImplemntion
             return new AddressToClient() { City = address.City, Nighbord = address.Street };
         }
 
-        public AddressToClient Update(int id, AddressToClient t,string street,string apartment)
+        public AddressToClient Update(int id, AddressToClient t,string street,int apartment)
         {
             Address address = new Address();
             address.City = t.City;
             address.Neighborhood = t.Nighbord;
             address.Street = street;
-            address.Apartment = apartment;
+            address.Building = apartment;
             addressRepo.Update(id, address);
             return t;
         }
